@@ -5,7 +5,7 @@ function SpritOtron
         return
     end
 
-    S = load_sprite_data(S);
+    S = load_sprite_data(file);
     
     S.time_unit = 1; % 1 or 1e-3 or 1e-6
     S.time_unit_name = 's'; % 's' or 'ms' or 'mcs'
@@ -70,7 +70,7 @@ function SpritOtron
     S.list = uicontrol('Style', 'listbox', 'Units', 'normalized',...
         'Position', [x_col(0), sp, st_w, 1-sp*2],...
         'BackgroundColor', 'w',...
-        'String', species_string, ...
+        'String', S.species_string, ...
         'Tag', 'edtFun');
 
     % edit fields
