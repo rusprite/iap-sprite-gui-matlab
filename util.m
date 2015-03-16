@@ -1,0 +1,1 @@
+get_z_index = @(z) interp1(S.z, 1:numel(S.z), z, 'nearest');
