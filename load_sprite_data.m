@@ -24,5 +24,5 @@ function S = load_sprite_data(file)
         error('SpritOtron:wrong_file', 'Unknown file format');
     end
     
-    S.species_number = size(S.N2,2);
+    S.species_number = size(S.N1,2);
 end
